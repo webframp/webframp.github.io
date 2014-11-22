@@ -3,7 +3,7 @@ layout: post
 title: "Email in emacs"
 date: 2014-01-07 22:07
 comments: true
-categories: emacs, email
+categories: emacs email
 ---
 
 I genuinely dislike email, yet it's a necessary part of working and
@@ -78,4 +78,3 @@ There's plenty of additional customization available depending on how
 deep the rabbit hole you choose to go. This setup has worked well for
 me up to this point and still allows me to use the gmail web interface
 in a pinch.
-
