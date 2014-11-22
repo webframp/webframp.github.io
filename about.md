@@ -1,30 +1,21 @@
 ---
 layout: page
-title: About
+title: "C-h i m webframp"
+date: 2011-11-30 00:25
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+My name is Sean Escriva, I'm a systems engineer.
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My past work and experiences are easily found online, I've spent years building
+networks, managing data centers and building infrastructure. I'm a zealous [Chef](http://www.getchef.com/chef/) convert and
+currently work with the amazingly talented team at [Heavy Water Software](http://hw-ops.com)
 
-There are currently two themes built on Poole:
+My limited spare time is filled with functional languages, python,
+volunteering and occasional attempts at guitar and learning spoken
+languages.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+#### Webframp?
+It started as a joke. My wife's side of the family didn't use the word
+*fart* and instead used *framp*. I always found this hilarious so
+made up webframp as a joke and a reminder to never take myself or
+anything online too seriously. 
