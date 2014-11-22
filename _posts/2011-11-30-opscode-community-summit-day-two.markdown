@@ -3,7 +3,7 @@ layout: post
 title: "Opscode Community Summit - Day Two"
 date: 2011-11-30 20:41
 comments: false
-categories: [opscode, chef]
+categories: opscode chef
 ---
 
 The first historic Opscode Community Summit is officially over. See
@@ -11,13 +11,13 @@ yesterdays post for a basic description of the event and structure.
 
 After another brief introduction, topics were discussed, a schedule
 arranged and the agenda was live. Topics for day two included:
-{% blockquote %}
-  Managed Nodes a.k.a external entities
-  Chef for big data projects, such as hadoop, cassandra and similar
-  Ticket/triage process
-  Network monitoring, it sucks
-  Feature roadmaps, both short and long term
-{% endblockquote %}
+
+>  Managed Nodes a.k.a external entities
+>  Chef for big data projects, such as hadoop, cassandra and similar
+>  Ticket/triage process
+>  Network monitoring, it sucks
+>  Feature roadmaps, both short and long term
+
 
 There's more, but I lost track due to poor note taking on my part.
 
@@ -38,7 +38,7 @@ possible collaboration with the community. I hope to dig in to this a
 little more since I've been thinking about problems in around
 monitoring, metrics and alerting for a little while lately.
 
-{% img left http://farm7.staticflickr.com/6039/6431812797_4cc2d00eba.jpg 500 299 'Day One Agenda' 'Agenda Board - Day 2' %}
+![Day One Agenda](http://farm7.staticflickr.com/6039/6431812797_4cc2d00eba.jpg "Agenda Board - Day 2")
 
 Overall what I most enjoyed about the summit is the sense of community
 that is clearly maturing around chef. With so many passionate people

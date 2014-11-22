@@ -32,7 +32,6 @@ spend most of my day in a text editor where the bindings (and
 subsequent muscle memory) I know are very different than those
 available in the Gmail web interface.
 
-{% pullquote %}
 Several times in the past I've searched for a fast, configurable way
 to use emacs for accessing my email. For one reason or another the
 [existing options](http://www.emacswiki.org/emacs/CategoryMail) were
@@ -41,7 +40,6 @@ lacking in my opinion and didn't fit my needs. However, a little over
 which is billed as a: {"fast, global search and tag based email reader
 to use within your text editor or in a terminal"}. This sounded like
 exactly what I was looking for.
-{% endpullquote %}
 
 It's essentially a minimal interface to a Xapian index of your mail so
 powerful [searching is easy](http://notmuchmail.org/searching/), but
