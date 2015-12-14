@@ -63,6 +63,8 @@ OK, lets go with that, at least I've got something. *Note to self:* Save that, y
 
 Let's update it to add an ec2 instance (Update plans are amaze!)
 
+*Update: 2015-12-14* `sfn update` is the wrong command here, better to use `sfn create --apply-stack`
+
 ``` sh
 ~/s/sparkleformation-workshops ❯❯❯ be sfn update training-vpc --file sparkleformation/example.rb
 [Sfn]: SparkleFormation: update
