@@ -3,7 +3,7 @@ layout: post
 title: "SparkleFormation Bedtime Story"
 date: 2015-12-13 20:42
 comments: true
-categories: aws, cloudformation
+categories: aws cloudformation
 ---
 
 #A very brief whirlwind tour of sparkles
