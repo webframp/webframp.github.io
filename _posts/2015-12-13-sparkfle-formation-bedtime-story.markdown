@@ -59,7 +59,7 @@ The important stuff:
 [Sfn]:    Public Us East1e Subnet: subnet-27fc781a
 ```
 
-OK, lets go with that, at least I've got something. *Note to self:* Save that, you're going to need it later.
+OK, lets go with that, at least I've got something. *Note to self:* Save that, you're going to need it later (or better yet use `--apply-stack`)!
 
 Let's update it to add an ec2 instance (Update plans are amaze!)
 
@@ -303,3 +303,19 @@ bundle exec destroy training-vpc
 
 Footnote:
 In all seriousness, none of this is ever easy and all software is terrible. The alternatives are far, far worse and you should just be using [SparkleFormation](http://www.sparkleformation.io/)
+
+### Update: 2015-12-14
+
+The actual source of my issue here was not SparkleFormation. I was
+trying to create a new stack but the `update` command is intended to
+update an existing stack (Surprise!).
+
+What worked perfectly as advertised was to actually use:
+
+``` sh
+bundle exec sfn create example-stack --apply-stack training-vpc --file sparkleformation/example.rb
+```
+
+This automatically takes the stack outputs from the previously created
+vpc, `training-vpc` and uses it as inputs for the new `example-stack`
+created from the template `example.rb`
