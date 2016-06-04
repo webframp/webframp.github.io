@@ -6,7 +6,7 @@ comments: true
 categories: aws cloudformation
 ---
 
-#Growing into SparkleFormation 
+# Growing into SparkleFormation 
 
 In my continued usage with [SparkleFormation](http://www.sparkleformation.io/)
 I'm really growing to appreciate the convenience of having ruby available when
@@ -18,7 +18,7 @@ and yml are not, and the simplicity of the SparkleFormation DSL.
 At it's simplest you can mirror the structure of any cloudformation json (and
 finally have comments inline!) but you quickly discover more advanced use cases.
 
-#SparkleFormation registries
+# SparkleFormation registries
 
 Registries are described as: 
 
@@ -45,7 +45,7 @@ SfnRegistry.register(:instance_size_default){ 'm3.medium' }
 or even something a little more involved like shared `AWS::CloudFormation::Init`
 data.
 
-#A more dynamic registry for AWS cfn-init
+# A more dynamic registry for AWS cfn-init
 
 Recently the need arose to provide a shared registry for the necessary init
 commands to bootstrap a new ec2 instance with `chef-client`. Since we deal with

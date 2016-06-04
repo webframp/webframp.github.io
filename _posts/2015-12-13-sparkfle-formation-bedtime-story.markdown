@@ -6,7 +6,7 @@ comments: true
 categories: aws cloudformation
 ---
 
-#A very brief whirlwind tour of sparkles
+# A very brief whirlwind tour of sparkles
 
 or: How I learned to stop writing terrible [serialization](https://aws.amazon.com/cloudformation/aws-cloudformation-templates/) formats [directly](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer-json-editor.html) and [love the dsl](http://www.sparkleformation.io/)
 
