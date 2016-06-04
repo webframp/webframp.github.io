@@ -1,9 +1,4 @@
-# Dependencies
-markdown:            redcarpet
-highlighter:         pygments
-
 # Permalinks
-#
 # Use of `relative_permalinks` not supported on github
 permalink:           pretty
 
@@ -12,9 +7,15 @@ title:               Webframp
 tagline:             ' Ops culture and other hacker ramblings '
 description:         ' Another geek with a blog and not much to say. '
 url:                 http://webframp.com
-baseurl:             /
+baseurl:             ""
 paginate:            5
 exclude:             [Gemfile*, README.md]
+include:             ["_pages"]
+
+# Dependencies
+gems:
+  - jekyll-paginate
+  - jekyll-gist
 
 # About/contact
 author:
