@@ -26,7 +26,7 @@ Registries are described as:
 
 A **dynamic** in SparkleFormation is just a reusable block of code that
 generates some section of the template and can be very flexible. This is in
-comparison to `components` which are meant as single use items to insert a
+comparison to **components** which are meant as single use items to insert a
 static block of code.
 
 Registries and dynamics are similar in that they are just building blocks for
