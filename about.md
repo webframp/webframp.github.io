@@ -7,15 +7,18 @@ date: 2011-11-30 00:25
 My name is Sean Escriva, I'm a systems engineer.
 
 My past work and experiences are easily found online, if you're
-interested. I've spent years building networks, managing data centers
-and building infrastructure. I'm a zealous
-[Chef](http://www.getchef.com/chef/) convert and currently work with
-the amazingly talented team at
-[Heavy Water Software](http://hw-ops.com)
+interested, or just feel free to [ask me](https://twitter.com/webframp). 
+I've spent years building networks, managing data centers, building 
+infrastructure and teaching DevOps.
 
-My limited spare time is filled with functional languages, python,
-volunteering and occasional attempts at guitar and learning spoken
-languages.
+I have a lot of history using [Chef](http://www.getchef.com/chef/), formerly worked with
+the amazingly talented teams at [Heavy Water Software](http://hw-ops.com) and [Sensu](https://sensu.io/).
+
+Most recently I'm a full time volunteer in NY, working on infrastructure 
+and cloud related projects.
+
+My limited spare time is filled with functional languages, python, mechanical keyboards,
+occasional attempts at guitar and learning spoken languages.
 
 #### Webframp?
 It started as a joke. My wife's side of the family didn't use the word
