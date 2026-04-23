@@ -3,7 +3,7 @@ title: "The Architect's Instinct"
 date: 2026-04-23T10:37:25-04:00
 tags: [devops, ai]
 description: "Mechanical friction is dissolving, but do not mistake easy for simple"
-draft: true
+draft: false
 ---
 
 We are living through a strange professional silence. Many of us use AI every
