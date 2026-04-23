@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://webframp.com/pr-preview/pr-6/sitemap.xml
