@@ -44,6 +44,7 @@ jobs:
             --gc \
             --minify \
             --baseURL "https://webframp.com/"
+          touch ./public/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
