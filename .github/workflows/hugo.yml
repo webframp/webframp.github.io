@@ -45,6 +45,7 @@ jobs:
             --minify \
             --baseURL "https://webframp.com/"
           touch ./public/.nojekyll
+          echo "webframp.com" > ./public/CNAME
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4

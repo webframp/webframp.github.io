@@ -50,6 +50,7 @@ jobs:
             --buildDrafts \
             --baseURL "https://webframp.com/pr-preview/pr-${{ github.event.number }}/"
           touch ./public/.nojekyll
+          echo "webframp.com" > ./public/CNAME
 
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
