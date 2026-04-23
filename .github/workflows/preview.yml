@@ -55,3 +55,4 @@ jobs:
         with:
           source-dir: ./public/
           preview-branch: gh-pages
+          pages-base-url: webframp.com
