@@ -2,6 +2,7 @@
 title: "This I want to remember"
 date: 2011-12-01
 tags: [chef]
+description: "Notes on the Opscode community effort to split the monolithic cookbooks repo into individual cookbook repos."
 ---
 
 One topic frequently tossed around at the recent Opscode summit was a

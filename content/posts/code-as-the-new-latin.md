@@ -2,6 +2,7 @@
 title: "Code as the new Latin"
 date: 2011-12-11
 tags: []
+description: "Reflections on why coding literacy matters for everyone, inspired by David Mitchell's comparison of code to Latin."
 ---
 
 There's a thought provoking article by David Mitchell at

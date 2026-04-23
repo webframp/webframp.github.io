@@ -2,6 +2,7 @@
 title: "Opscode Community Summit - Day Two"
 date: 2011-11-30
 tags: [opscode, chef]
+description: "Day two of the Opscode Summit, featuring the big announcement of Hosted Chef moving from Ruby+NoSQL to Erlang+MySQL."
 ---
 
 The first historic Opscode Community Summit is officially over. See

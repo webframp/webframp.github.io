@@ -2,6 +2,7 @@
 title: "Email in emacs"
 date: 2014-01-07
 tags: [emacs, email]
+description: "Setting up Notmuch with offlineimap and msmtp for fast, searchable email in Emacs on OS X."
 ---
 
 I genuinely dislike email, yet it's a necessary part of working and

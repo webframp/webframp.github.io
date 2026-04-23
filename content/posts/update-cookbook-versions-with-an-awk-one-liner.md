@@ -2,6 +2,7 @@
 title: "Update cookbook_versions with an awk one-liner"
 date: 2012-03-23
 tags: [shell]
+description: "A quick awk one-liner to populate cookbook_versions in a Chef environment file."
 ---
 
 Sometimes it's the simplest things that remind me why I love the classic unix tools. Here's a quick way to fill in cookbook_versions for a chef environment using awk.
