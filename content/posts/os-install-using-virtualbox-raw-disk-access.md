@@ -1,7 +1,7 @@
 ---
 title: "OS Install using VirtualBox raw disk access"
 date: 2014-01-24
-tags: []
+tags: [openbsd]
 description: "Installing OpenBSD to an SD card from a MacBook Air using VirtualBox raw disk access."
 ---
 
