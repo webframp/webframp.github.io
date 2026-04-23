@@ -3,9 +3,9 @@
  * Heading: Glacial Indifference — geometric sans with character
  * Body: Inter — optimized for screen legibility
  * Code: JetBrains Mono — ligatures, clear distinction between similar glyphs
+ *
+ * Google Fonts (Inter, JetBrains Mono) loaded via <link> in extend_head.html
  */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @font-face {
   font-family: 'Glacial Indifference';
