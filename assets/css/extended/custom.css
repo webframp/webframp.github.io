@@ -1,0 +1,84 @@
+/* Typography overrides for PaperMod
+ *
+ * Heading: Glacial Indifference — geometric sans with character
+ * Body: Inter — optimized for screen legibility
+ * Code: JetBrains Mono — ligatures, clear distinction between similar glyphs
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/fonts/GlacialIndifference-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base typography */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 17px;
+  line-height: 1.7;
+  letter-spacing: -0.011em;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.entry-hint-parent,
+header .logo a {
+  font-family: 'Glacial Indifference', 'Inter', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Site title */
+header .logo a {
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Post titles on list pages */
+.post-entry .entry-header h2 {
+  font-weight: 700;
+}
+
+/* Single post title */
+.post-header h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+/* Code blocks */
+code, pre, .highlight code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+  font-size: 0.88em;
+}
+
+/* Inline code */
+:not(pre) > code {
+  font-size: 0.88em;
+  padding: 0.15em 0.35em;
+}
+
+/* Improve content width for readability */
+.post-content {
+  max-width: 42rem;
+}
+
+/* Blockquote styling */
+blockquote {
+  font-style: italic;
+  border-left-width: 3px;
+}

@@ -1,0 +1,59 @@
+baseURL: "https://webframp.com/"
+languageCode: en-us
+title: Webframp
+theme: PaperMod
+pagination:
+  pagerSize: 10
+
+params:
+  description: "Ops culture and other hacker ramblings"
+  author: Sean Escriva
+  defaultTheme: auto
+  showReadingTime: true
+  showPostNavLinks: true
+  showBreadCrumbs: false
+  showCodeCopyButtons: true
+  showShareButtons: false
+  showToc: false
+
+  homeInfoParams:
+    Title: Webframp
+    Content: "Ops culture and other hacker ramblings"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/webframp"
+    - name: mastodon
+      url: "https://hachyderm.io/@webframp"
+    - name: rss
+      url: "/index.xml"
+
+  assets:
+    disableFingerprinting: false
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+markup:
+  highlight:
+    style: dracula
+    lineNos: false
+    guessSyntax: true
