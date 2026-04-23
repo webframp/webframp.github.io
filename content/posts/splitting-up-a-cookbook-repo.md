@@ -2,6 +2,7 @@
 title: "Splitting up a cookbook repo"
 date: 2011-12-15
 tags: [chef, git]
+description: "A script for splitting a monolithic Chef cookbooks repo into individual repos using git filter-branch and hub."
 ---
 
 It seems in the chef community lately there's a growing trend for

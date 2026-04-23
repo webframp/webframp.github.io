@@ -2,6 +2,7 @@
 title: "Fixing emacs bindings in iTerm2"
 date: 2013-02-22
 tags: [emacs]
+description: "How to fix Shift-Meta key combinations in Emacs running inside iTerm2 on OS X by mapping raw escape codes."
 ---
 
 I spend a decent amount of time in org-mode, using Emacs + iTerm2 on a

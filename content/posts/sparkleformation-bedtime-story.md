@@ -2,6 +2,7 @@
 title: "SparkleFormation Bedtime Story"
 date: 2015-12-13
 tags: [aws, cloudformation]
+description: "A beginner's whirlwind tour of SparkleFormation, stumbling through VPC creation, AMI hunting and CloudFormation stack updates."
 ---
 
 # A very brief whirlwind tour of sparkles

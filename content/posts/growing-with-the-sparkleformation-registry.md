@@ -2,6 +2,7 @@
 title: "Growing with the SparkleFormation registry"
 date: 2016-06-03
 tags: [aws, cloudformation]
+description: "Using SparkleFormation registries with arguments to build reusable, platform-aware CloudFormation init configurations."
 ---
 
 # Growing into SparkleFormation

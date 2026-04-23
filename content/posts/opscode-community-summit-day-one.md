@@ -2,6 +2,7 @@
 title: "Opscode Community Summit - Day One"
 date: 2011-11-29
 tags: [opscode, chef]
+description: "Highlights from day one of the Opscode Community Summit, an unconference celebrating the Chef community."
 ---
 
 Opscode Summit day one has passed. I had to skip the sponsored dinner

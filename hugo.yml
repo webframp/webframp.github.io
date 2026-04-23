@@ -2,6 +2,7 @@ baseURL: "https://webframp.com/"
 languageCode: en-us
 title: Webframp
 theme: PaperMod
+enableRobotsTXT: true
 pagination:
   pagerSize: 10
 
