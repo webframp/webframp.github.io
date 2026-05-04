@@ -1,0 +1,228 @@
+Radial Map Patterns in the Constellation Visualization
+======================================================
+An analysis of profile.keeb.dev/2.html
+2026-05-03
+
+
+The Hidden Pattern: Ego-Centric Badge Constellation
+----------------------------------------------------
+
+The constellation visualization at profile.keeb.dev/2.html implements a
+pattern that isn't explicitly named on the page but maps to several
+well-established industry patterns. At its core, it is a manually-placed
+ego-centric badge constellation -- a hybrid of at least six recognized
+visualization paradigms.
+
+The visualization renders an SVG (1000x800 viewBox) with a center
+"operative" node at (500, 400), badge family clusters in spatial
+quadrants, two edge types (colored tier-links and dashed anchor edges),
+concentric rings on the ego node, and CSS pulse/twinkle animations.
+
+
+1. Ego-Centric Network Graph (Primary Pattern)
+-----------------------------------------------
+
+Relevance: Direct
+
+The operative node at (500, 400) is a textbook ego node from social
+network analysis. Everything radiates from it:
+
+  - Anchor edges (dashed, low-opacity white) are ego-alter ties, one per
+    badge family.
+  - Badge family clusters in quadrants are alter groupings by category.
+  - Concentric rings on the ego node (r=14, r=23, r=30) encode
+    centrality and importance.
+
+This pattern originates in sociometric research and is implemented in
+tools like Gephi, Cytoscape.js, and D3's forceRadial. The key
+difference: this visualization uses manual coordinate placement rather
+than force-directed simulation, which is the correct choice for fixed
+categorical semantics where each quadrant represents a domain.
+
+Industry use: Facebook friend graphs, LinkedIn connection maps,
+cybersecurity threat actor mapping, organizational network analysis.
+
+
+2. Skyrim Constellation Skill System (Closest Single Precedent)
+---------------------------------------------------------------
+
+Relevance: Direct -- and the connection not called out on the page
+
+Skyrim (2011) pioneered the "skill constellation" pattern in mainstream
+awareness. The structural mapping is remarkably close:
+
+  Skyrim                                   Constellation Profile
+  ---------------------------------------- ----------------------------------------
+  Player character (implicit center)       Center ego node with pulse animation
+  3 Guardian Sign arcs (Warrior/Mage/Thief)Spatial quadrants for badge families
+  18 constellations (skill families)       Badge family clusters (Streak, etc.)
+  Stars within a constellation             Individual badge tier nodes
+  Perk chains bottom-to-top               Tier-link edges (bronze to silver to gold)
+  Guardian Sign to constellation link      Anchor edges (dashed, center to family)
+  Bright glow on unlocked perks            Twinkle/glow CSS animations
+  Hover shows perk name/description        Hover tooltips with award details
+
+Skyrim's design lesson: awe as UX. The camera zoom into the night sky
+transforms a spreadsheet of skill data into an experience. The pulse
+animation on the center node and the ambient twinkle effects serve the
+same function.
+
+Other gaming precedents: Path of Exile's passive skill tree (1,300+
+nodes in a radial web), Final Fantasy X's Sphere Grid, Diablo's tiered
+skill trees.
+
+
+3. Radial Tree / Sunburst Topology
+-----------------------------------
+
+Relevance: Structural
+
+The badge family chains form a tree: operative -> family anchor ->
+bronze -> silver -> gold. This is a radial tree rendered as a node-link
+diagram rather than as filled arcs (sunburst). Key borrowed elements:
+
+  - Depth from center encodes tier level (higher tiers farther from ego).
+  - Concentric rings echo the sunburst's ring structure.
+  - Color progression (bronze #cd7f32 -> silver #cbd5e1 -> gold #fbbf24)
+    encodes depth.
+
+The design diverges from pure radial trees by using quadrant-based
+spatial clustering rather than equal angular spacing -- a hybrid approach
+that adds categorical meaning to position.
+
+
+4. Radar/Spider Chart Vocabulary
+--------------------------------
+
+Relevance: Visual language only
+
+The concentric rings on the ego node borrow the radar chart's visual
+convention where rings equal magnitude from center. Each quadrant
+functions like a radar axis representing a competency domain. The
+difference: discrete connected nodes rather than continuous axes with a
+polygon.
+
+Industry use: FIFA player cards, Pluralsight Skill IQ, RPG character
+sheets, HR performance reviews.
+
+
+5. Graph-Based Identity Systems
+-------------------------------
+
+Relevance: Functional purpose
+
+The visualization serves the same role as GitHub contribution graphs,
+Stack Overflow badges, and Credly credentials: identity through
+accumulated evidence.
+
+  System                                   Constellation Analog
+  ---------------------------------------- ----------------------------------------
+  GitHub contribution intensity            Concentric rings / pulse on ego node
+  Stack Overflow gold/silver/bronze badges Tier-link progression within families
+  Credly credential collections            Badge family quadrant clusters
+  LinkedIn skill endorsements              Anchor edges connecting identity to domains
+
+Critical gap this design fills: Across the credential ecosystem (Open
+Badges, Credly, Badgr), relational metadata exists -- prerequisites,
+families, tiers, alignments -- but is almost never visualized as a
+graph. Every major platform renders badges as flat grids. The
+constellation pattern is a genuinely novel contribution to this space.
+
+
+6. Mind Map / Concept Map Geometry
+----------------------------------
+
+Relevance: Structural similarity
+
+The "central idea radiating outward" structure of mind maps is present.
+The operative is the central concept; badge families are major branches;
+tier badges are sub-branches. The design differs from mind maps in two
+ways:
+
+  - Constrained quadrant placement rather than organic free-form
+    branching.
+  - Typed edge semantics (tier-links vs. anchors with distinct visual
+    styling) rather than generic branch connections.
+
+
+Design Decision: Manual Placement Over Force-Directed Layout
+------------------------------------------------------------
+
+The visualization uses hand-placed coordinates rather than physics
+simulation. This is the right call because:
+
+  1. Spatial semantics are categorical -- quadrant position means
+     something; force simulation would scramble it.
+  2. Tier chains must read as ordered sequences -- force layout could
+     reorder them.
+  3. CSS animations need stable positions -- settling physics would
+     create visual chaos.
+  4. Reproducibility matters -- same data should always produce the same
+     visual.
+  5. Scale is manageable -- 11 badge nodes in a 1000x800 SVG is
+     tractable by hand.
+
+A force-directed approach (D3's forceRadial) would be appropriate if
+badge counts grew significantly or if the data were dynamic.
+
+
+The Underexploited Opportunity
+------------------------------
+
+The pattern that isn't called out is this: the constellation is
+simultaneously an ego graph, a skill tree, and an identity credential
+map -- three patterns that are typically implemented independently across
+different industries (social network analysis, game design, professional
+credentialing). Combining them into a single visualization creates
+something that:
+
+  1. Gaming lacks -- Skyrim has no explicit ego node; Path of Exile has
+     no identity layer.
+  2. Credential platforms lack -- Credly/Open Badges have the relational
+     data but render flat grids.
+  3. Social network tools lack -- ego graphs don't encode tiered
+     progression within clusters.
+  4. Radar charts lack -- spider charts show current state but not
+     progression paths.
+
+The constellation visualization is a convergence point where these four
+domains overlap but none have fully occupied. The closest any single
+system has come is Skyrim's skill view, but it lacks the ego-centric
+identity framing and the explicit tier-chain edge typing.
+
+
+Cautions from Industry
+----------------------
+
+  - Khan Academy deprecated its knowledge map graph because users found
+    it overwhelming. The quadrant clustering and anchor-edge scaffolding
+    in this design mitigate that risk.
+
+  - Accessibility -- star fields with varying brightness challenge
+    low-vision users. The prefers-reduced-motion handling is present, but
+    contrast ratios and screen reader alternatives need attention.
+
+  - Mobile -- radial layouts are notoriously difficult on small screens.
+    This works best as a desktop/tablet experience.
+
+  - Scalability -- manual placement breaks down past roughly 30-40
+    nodes. A hybrid approach (manual quadrant assignment plus algorithmic
+    intra-cluster positioning) would be needed at scale.
+
+
+Summary: Pattern Relevance
+--------------------------
+
+  Pattern                    Relevance   Key Borrowed Element
+  -------------------------- ----------- ------------------------------------------
+  Ego graph                  High        Center node, radial placement, edge typing
+  Constellation map          High        Twinkle/pulse, dark aesthetic, clustering
+  Graph identity systems     High        Badge tiers, progression, identity viz
+  Radial tree / sunburst     Medium      Concentric depth rings, chain links
+  Mind map                   Medium      Central concept radiating outward
+  Radar chart                Low         Concentric ring visual vocabulary only
+
+Best characterized as: a manually-placed ego-centric badge constellation
+-- an ego graph structure with constellation-map aesthetics, using radial
+tree chain topology for badge family progression, rendered as a static
+SVG with CSS animations.
