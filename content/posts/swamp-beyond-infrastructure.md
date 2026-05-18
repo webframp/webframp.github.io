@@ -104,7 +104,9 @@ same way with CEL. The domain vanishes at the contract boundary.
 
 ## Why this matters for agents
 
-Four things happen when your writing voice lives in this kind of system.
+As [Paul Stack](https://stack72.dev/) put it, swamp brings determinism to a
+probabilistic system. Four things happen when your writing voice lives in this
+kind of architecture.
 
 **Agents get structured context, not chat history.** Loading a voice profile from
 `swamp data get` before writing is the same pattern as loading cluster state
