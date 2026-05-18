@@ -49,6 +49,7 @@ jobs:
             --config hugo.yml \
             --gc \
             --minify \
+            --buildFuture \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
 
       - name: Upload artifact

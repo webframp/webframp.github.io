@@ -1,6 +1,6 @@
 ---
 title: "The Workflow Collision"
-date: 2026-05-18T10:00:00-04:00
+date: 2026-05-17T19:00:00-04:00
 tags: [devops, ai, swamp, workflow]
 description: "Your team's workflow and your agent's lifecycle want different things"
 ---
