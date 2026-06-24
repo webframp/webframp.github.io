@@ -14,13 +14,13 @@ want to know with that level of precision.
 
 The same pattern repeats at every layer. Ask them to write a workflow DAG
 and they cannot specify which steps depend on which, because they have never
-separated their assumptions about sequence from the actual causal
-dependencies. Ask them to write a CEL query against versioned data and they
-cannot formulate the question, because they have never distinguished "what
-do I want to know" from "what does the system happen to show me."
+separated their assumptions about sequence from actual causal dependencies.
+A CEL query against versioned data exposes the same gap from a different
+angle: you must know the question before you can ask it, and most people
+have never distinguished "what do I want to know" from "what does the
+system happen to show me."
 
-This is not a tooling problem. This is a thinking problem that the tooling
-makes visible.
+The tooling is surfacing a thinking problem.
 
 I have watched this enough times to recognize the shape. The difficulty is
 never the syntax. It is always the same gap: the distance between what
@@ -28,11 +28,11 @@ someone vaguely intends and what they can state precisely enough for a
 deterministic system to act on. A typed schema does not accept vague intent.
 It requires you to know what you mean.
 
-An LLM has the same property, but without the structured feedback. When you
-prompt an LLM with vague intent, it returns vague output. When you prompt
-it with precise intent, clear constraints, explicit success criteria, it
-returns something you can evaluate against those criteria. The difference in
-output quality tracks directly to the difference in input precision.
+An LLM has the same property, but without the structured feedback. The
+difference in output quality tracks directly to the difference in input
+precision. Precise constraints and explicit success criteria produce output
+you can evaluate. Vague intent produces output nobody can evaluate, because
+there was never a stated standard to evaluate against.
 
 I owned an African Grey parrot for years. The bird was brilliant in ways
 that surprised people who had never lived with one. It learned my moods. It
@@ -45,9 +45,8 @@ entirely on the quality of what went in.
 
 If AI is the stochastic parrot that its critics claim, then the mirror it
 holds up reflects the thinking you feed it. When the output is generic and
-forgettable, that is a diagnostic. Not a diagnosis of the tool. A diagnosis
-of the input. Vague input, vague output. The mirror does not lie, and it
-does not flatter.
+forgettable, that is a diagnostic of the input. Vague input, vague output.
+The mirror does not lie, and it does not flatter.
 
 A programmer posted on Substack recently about the death of taste. His
 coworkers ship marketing copy through ChatGPT, the results are
@@ -83,10 +82,9 @@ think and articulate it clearly enough for another entity without your
 context to act on it.
 
 People are capable of far more precise thinking than their environment has
-ever required of them. The gap between what they can do and what they
-routinely do is enormous. The systems they move through every day do not
-exercise that capacity because those systems were never designed to. They
-were designed for throughput, not depth.
+ever required of them. The gap between capacity and routine practice is
+enormous, and it persists because every system in a knowledge worker's week
+optimizes for throughput, not depth.
 
 The LLM does not create the thinking gap. It makes the gap visible and
 consequential for the first time.
@@ -140,14 +138,9 @@ learned when those assumptions hit production. The agent asked the
 questions. You did the thinking. The data layer kept the record, and the
 record trained you.
 
-This is what the training environment looks like. Typed constraints that
-force explicit intent before execution. Versioned output that makes drift
-from intent observable over time. Structured review workflows where the
-evaluation criteria exist as data, not as a feeling in someone's gut.
-Feedback loops short enough that the connection between input quality and
-output quality remains visible. The feedback and versioning are automatic.
-The human part is the design: deciding what to model, what to observe, what
-conditions constitute success.
+The feedback and versioning are automatic. The human part is the design:
+deciding what to model, what to observe, what conditions constitute
+success.
 
 The mirror is already in the room. What matters now is what you build
 around it.
