@@ -3,30 +3,27 @@ title: "About"
 url: "/about/"
 ---
 
-I'm Sean Escriva, a principal platform engineer with more than twenty years of experience building infrastructure, cloud platforms, and developer tooling.
+I’m Sean Escriva, a principal platform engineer and engineering leader working at the intersection of infrastructure, reliability, and system design. I’ve been doing this work for more than 25 years.
 
-After years working heavily with tools like AWS, Kubernetes, Terraform, CI/CD, and large-scale operational environments, I've become less interested in clever technology and more interested in useful technology.
+I’ve worked with AWS, Kubernetes, Terraform, CI/CD systems, and large-scale operational environments. Over time, I’ve become less interested in clever technology and more interested in useful technology.
 
-I write about architecture, reliability, AI-assisted engineering, and the human side of complex systems. My work sits at the intersection of platform engineering and organizational design: helping teams move faster without making systems harder to understand.
+I’m interested in systems that must survive contact with reality. Networks. Data centers. Cloud platforms. Deployment pipelines. None of them are interesting in isolation. They matter when people depend on them. They matter when they fail in ways you didn’t anticipate.
 
-I've spent years building networks and data centers, and just as long thinking
-about how infrastructure holds together under pressure. I've taught DevOps along
-the way. I've worked deeply with [Chef](https://www.chef.io/), and spent time
-with the teams at [Heavy Water Software](http://hw-ops.com) and
-[Sensu](https://sensu.io/), places that sharpened my sense of what “reliable”
-really means in practice.
+I write about architecture, reliability, AI-assisted engineering, and the human side of complex systems. Platform engineering. Organizational design. The ways teams move, and the ways systems shape that movement.
 
-The theme of this site is simple: good engineering reduces unnecessary complexity so people can do better work.
+I’ve built networks and data centers. I’ve taught DevOps. I’ve worked deeply
+with [Chef](https://www.chef.io/), with the teams at [Heavy Water
+Software](http://hw-ops.com) and [Sensu](https://sensu.io/). Each of those
+environments sharpened my sense of what reliability means in practice.
 
-My past work is easily found online, if you're interested, or just feel free to
-[reach out](https://hachyderm.io/@webframp). 
+Most of my work has been about reducing that distance between design and reality. Not removing complexity. Making it legible.
 
-My limited spare time is filled with functional languages, mechanical keyboards,
-occasional attempts at guitar and learning spoken languages.
+This site is about that work. Good engineering reduces unnecessary complexity. It gives people room to think.
+
+Past work can be found online or simply [contact me](https://hachyderm.io/@webframp). 
 
 #### Webframp?
 
-It started as a joke. My wife's side of the family didn't use the word
-*fart* and instead used *framp*. I always found this hilarious so
-made up webframp as a joke and a reminder to never take myself or
-anything online too seriously.
+My online name, webframp, started as a joke. My wife’s family used *framp* instead of *fart*. I turned it into a username and it stuck.
+
+A reminder not to take myself or the internet too seriously.
