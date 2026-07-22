@@ -1,6 +1,6 @@
 ---
 title: "Six Million Events, Three Minutes of Trouble"
-date: 2026-07-21
+date: 2026-07-22
 tags: ["swamp", "infrastructure", "trust"]
 description: "A load test that briefly knocked out Swamp's telemetry pipeline, and what it took for that to read as curiosity instead of an attack."
 ---
