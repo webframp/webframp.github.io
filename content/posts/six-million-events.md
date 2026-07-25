@@ -40,3 +40,5 @@ Containment planning optimizes for a stranger: assume nothing about who's on the
 But a system that treats every actor as a stranger has no way to be delighted by one. Nick's reaction wasn't naive. It was the payoff of already knowing who I was before the swarm hit. The containment failed. What happened after it failed is the part that changed.
 
 I still owe them a heads-up next time: announced, capped, with someone watching the telemetry rate instead of stepping away. But I'm glad the uncapped, unattended version happened first. It's the only way I'd have found out that curiosity, not caution, was the thing he was measuring me on.
+
+*Edit: 2026-07-25* Read follow up from Nick with his point of view: [Three Minutes of Trouble, 20 million events](https://keeb.dev/2026/07/22/three-minutes-of-trouble/)
