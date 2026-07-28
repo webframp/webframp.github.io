@@ -5,7 +5,7 @@ tags: [swamp, dynamodb, datastore, performance, aws]
 description: "Four fixes into a DynamoDB sync backend, the ceiling kept moving: from a hot GSI partition to lock contention to catalog metadata no datastore could outrun."
 ---
 
-I opened issue #265 against my own extension after a load test told me something I didn't want to hear. Ten workers, seven hours, and the sync rate had fallen by a factor of ten: throughput workers down from 0.10 iterations per second to 0.01, write-stress workers (one model, continuous writes) failing every single iteration once they passed number two hundred.
+I opened issue [#265](https://github.com/webframp/swamp-extensions/issues/265) against my own extension after a load test told me something I didn't want to hear. Ten workers, seven hours, and the sync rate had fallen by a factor of ten: throughput workers down from 0.10 iterations per second to 0.01, write-stress workers (one model, continuous writes) failing every single iteration once they passed number two hundred.
 
 The extension is a DynamoDB backend for [swamp](https://swamp-club.com)'s datastore layer, and the datastore layer treats storage as a path-addressable file tree: every model's data lives at `data/{model-type}/{model-id}/{data-name}/{version}/raw`, with a metadata file alongside it. Sync follows a fixed sequence: acquire a lock, pull changed paths from remote, do the work locally, push the dirty paths back, commit an index update, release the lock. Whatever backend serves this sequence, S3, DynamoDB, or something else, sees whole-file transfers. It never sees an individual field write.
 
