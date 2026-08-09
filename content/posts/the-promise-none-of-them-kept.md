@@ -1,8 +1,8 @@
 ---
-title: "The Promise None of Them Kept"
+title: "Promise Theory Was Waiting for the Reasoning Agent"
 date: 2026-08-07T10:00:00-04:00
-tags: [swamp, infrastructure, devops, promise-theory, ansible, terraform, cfengine]
-description: "Terraform diffs files against files. Ansible pushes obligations from a center. Neither does what promise theory actually described."
+tags: [swamp, ai, agents, promise-theory, infrastructure, devops, terraform, ansible, cfengine]
+description: "Promise theory described agents that observe, reason, and commit. The IaC generation never delivered it and CFEngine came closest. LLMs supplied the missing reasoning layer, and swamp is built for the agent that has it."
 ---
 
 Mark Burgess shipped CFEngine in 1993, formalized promise theory with Siri
@@ -19,6 +19,14 @@ Terraform called its plans "declarative." Ansible called its playbooks
 
 None of those four kept the promise. Burgess's own tool did, and ran into a
 different limit.
+
+The reason to revisit any of this now is that the missing piece finally shipped,
+and it arrived from outside infrastructure entirely. LLMs supply the reasoning
+layer promise theory always assumed: an agent can observe a live system, weigh
+what it finds against context nobody enumerated in advance, and decide whether to
+act. Four generations of tooling could not do that at any price. CFEngine came
+closest and stopped short for reasons worth being precise about, and swamp is
+built for the agent that can.
 
 ## The promise theory control loop
 
@@ -284,6 +292,36 @@ promise-keeping executors rather than as autonomous peers. That is a smaller cla
 than CFEngine's per-host agent can make, and it comes with the memory CFEngine
 never had.
 
+## Built for the reasoning agent
+
+That architecture only pays off if an agent can consume it, and a framework can
+either tolerate an LLM operator or be shaped for one. The difference shows up in
+small decisions repeated everywhere. Swamp is shaped for one:
+
+- `--json` is a global option on every command, so structured output is the
+  default posture rather than a flag you remember to add.
+- Data carries a Zod schema and validates on write, so an agent receives typed
+  fields instead of prose to scrape.
+- Queries are CEL predicates over that typed data, so an agent composes a question
+  rather than filtering text and hoping the format held.
+- Method runs and reports emit a `narrative` alongside the structured payload, so
+  one result reads correctly to a person and to a model without a second rendering
+  pass.
+- `swamp agent setup` lets a repository define its own agent tool definitions, so
+  the repo tells the agent what it can do here instead of the agent guessing from
+  a binary's help text.
+- `swamp serve` exposes model and workflow execution over a WebSocket API, so an
+  agent drives the system without a shell in the middle.
+
+None of that makes a model correct. It removes the layer where agents fail hardest,
+which is parsing, guessing, and inferring structure that was never guaranteed. What
+remains is the part an LLM is actually good at: reading evidence and forming a
+judgment about it.
+
+A human can drive all of this by hand, and reading data queries and running
+workflows manually works fine. That is no longer the case the design optimizes
+for, and saying otherwise would be false modesty about what changed.
+
 ## The practical difference for a Terraform user
 
 If you use Terraform today, here is what changes:
@@ -413,50 +451,18 @@ any point in the three decades since. It was the reasoning agent, the one that c
 look at an observation, compare it against context nobody programmed it to
 anticipate, and decide whether to act.
 
-LLMs closed that gap, and the honest version of this story gives them the credit.
-The reasoning agent did not emerge from infrastructure tooling through steady
-refinement. It arrived from outside the field, and it arrived recently. An agent
-consuming swamp data can ask what changed, weigh the answer against context nobody
-enumerated in advance, and judge that this particular delta warrants action. No
-earlier automation could do that at any price, which is why three decades of
-increasingly sophisticated declaration formats never produced it.
+The credit for closing that gap belongs outside infrastructure, which is worth
+sitting with rather than glossing. Nothing in three decades of declaration formats
+was converging on a reasoning agent, and no amount of further refinement in that
+lineage would have produced one. The capability showed up as a general one and
+infrastructure inherited it.
 
-Terraform cannot supply it, since a state file is memory of a past action rather
-than perception, and neither can Ansible, whose playbook is a script pushed from a
-center. CFEngine had the loop and nowhere to keep what it learned.
+Terraform cannot supply reasoning, since a state file is memory of a past action
+rather than perception, and neither can Ansible, whose playbook is a script pushed
+from a center. CFEngine had the loop and nowhere to keep what it learned.
 
 The promise was always about agents that observe and decide, and we finally have
 agents that can do both. The infrastructure layer should get out of their way.
-
-## Built for the reasoning agent
-
-A framework can tolerate an LLM operator or it can be shaped for one, and the
-difference shows up in small decisions repeated everywhere. Swamp is shaped for
-one:
-
-- `--json` is a global option on every command, so structured output is the
-  default posture rather than a flag you remember to add.
-- Data carries a Zod schema and validates on write, so an agent receives typed
-  fields instead of prose to scrape.
-- Queries are CEL predicates over that typed data, so an agent composes a question
-  rather than filtering text and hoping the format held.
-- Method runs and reports emit a `narrative` alongside the structured payload, so
-  one result reads correctly to a person and to a model without a second rendering
-  pass.
-- `swamp agent setup` lets a repository define its own agent tool definitions, so
-  the repo tells the agent what it can do here instead of the agent guessing from
-  a binary's help text.
-- `swamp serve` exposes model and workflow execution over a WebSocket API, so an
-  agent drives the system without a shell in the middle.
-
-None of that makes a model correct. It removes the layer where agents fail hardest,
-which is parsing, guessing, and inferring structure that was never guaranteed. What
-remains is the part an LLM is actually good at: reading evidence and forming a
-judgment about it.
-
-A human can drive all of this by hand, and reading data queries and running
-workflows manually works fine. That is no longer the case the design optimizes
-for, and saying otherwise would be false modesty about what changed.
 
 ## Getting started
 
