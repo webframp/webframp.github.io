@@ -1,5 +1,5 @@
 ---
-title: "Promise Theory Was Waiting for the Reasoning Agent"
+title: "The Promise None of Them Kept"
 date: 2026-08-07T10:00:00-04:00
 tags: [swamp, ai, agents, promise-theory, infrastructure, devops, terraform, ansible, cfengine]
 description: "Promise theory described agents that observe, reason, and commit. The IaC generation never delivered it and CFEngine came closest. LLMs supplied the missing reasoning layer, and swamp is built for the agent that has it."
